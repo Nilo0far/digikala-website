@@ -9,6 +9,7 @@
   "author": "NILOOFAR Y",
   "license": "ISC",
   "dependencies": {
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "swiper": "^9.4.1"
   }
 }

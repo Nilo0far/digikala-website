@@ -26,12 +26,22 @@ div.main>div.suggest>div.pic>span{
     display: inline-block;
 }
 
-div.main>div.banner>img{
-   height: 400px;
-   width: 100%;
-   object-fit: cover;
-   
-}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
 div.main>div.shop>div.shpic,div.shpic2{
     display: inline-block;  
 }

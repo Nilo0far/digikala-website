@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>فروشگاه اینترنتی دیجی‌کالا</title>
 </head>
@@ -29,9 +30,21 @@
             <div class="pic"><img src="./pictures/In-Story.cover-comment-1686654640.jpeg" alt=""><span>جایزه ببر </span></div>
             <div class="pic"><img src="./pictures/In-Story-cover(1)-1686555767.jpeg" alt=""><span>کودکان کار</span></div>
     </div>
-    <div class="banner">
-        <img src="./pictures/7716cbc4a91ea5f7217a20ffbc52c66071f004a9_1686463308.webp" alt="">
-    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./pictures/7259db6e7403fafcaf15798835e92633bd497d44_1687691383.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./pictures/233f0d5271d76089692d76ece349272f3576e063_1687674187.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./pictures/df81437aca9a1f14c43215c7148053415c6084de_1687695342.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./pictures/835a1d08c1b004373ca4712edeafe640bcf1246c_1687680043.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./pictures/a02c09abb09f0009fa087bef3457599101703858_1687608081.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./pictures/e6eb5e3e429310819c41de56ef5f7e7164828711_1687789274.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./pictures/6594705debf692df93b306a095b0a13a615ee27c_1687250065.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./pictures/b7f8dfc325f6af4eb7c722490dda71484ff08181_1687601604.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./pictures/388de0cbedf778a3957e260c3fa903604345ae36_1687637122.webp" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+        
     <div class="shop">
         <div class="shpic"><img src="./pictures/d0dc31c892be8cf1408e4e14580b3f479da66bd1_1648897133.png" alt=""> <span>دیجی‌کالا جت</span> </div>
         <div class="shpic"><img src="./pictures/625d8883f37944f3f0c4af5fe39435600931ab22_1664309850.png" alt=""><span>حراج استایل</span></div>
@@ -658,5 +671,17 @@
   </div>
   <br><br>
     </div>
+
+
+
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
 </body>
 </html>
