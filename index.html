@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>فروشگاه اینترنتی دیجی‌کالا</title>
 </head>
@@ -32,9 +32,9 @@
     </div>
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="./pictures/7259db6e7403fafcaf15798835e92633bd497d44_1687691383.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./pictures/748a21c87cac05cc1d876a7b5a9f6f4c8f740222_1687964990.gif" alt=""></div>
           <div class="swiper-slide"><img src="./pictures/233f0d5271d76089692d76ece349272f3576e063_1687674187.webp" alt=""></div>
-          <div class="swiper-slide"><img src="./pictures/df81437aca9a1f14c43215c7148053415c6084de_1687695342.webp" alt=""></div>
+          <div class="swiper-slide"><img src="./pictures/c29aed1cf12c0740048d5b7a9cfdafec70770c4e_1686055788.gif" alt=""></div>
           <div class="swiper-slide"><img src="./pictures/835a1d08c1b004373ca4712edeafe640bcf1246c_1687680043.webp" alt=""></div>
           <div class="swiper-slide"><img src="./pictures/a02c09abb09f0009fa087bef3457599101703858_1687608081.webp" alt=""></div>
           <div class="swiper-slide"><img src="./pictures/e6eb5e3e429310819c41de56ef5f7e7164828711_1687789274.webp" alt=""></div>
@@ -65,6 +65,7 @@
                 <span class="cross">۹,۴۴۰,۰۰۰</span>
                 <img src="./pictures/Screenshot 2023-06-15 151150.png" alt="" class="toman">
             </div>
+            
             <div class="white1"><img src="./pictures/dacd53aed10f3e9f6c9bf1b56dc77df32cc3a31d_1682494130.webp" alt="">
                 <span class="red">۲۵٪</span>
                 <span class="prc">۴۵,۰۰۰</span>
@@ -674,12 +675,23 @@
 
 
 
-    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./swiper/swiper-bundle.min.js"></script>
 
     <script>
         var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2700,
+            disableOnInteraction: false,
+          },
           pagination: {
             el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
           },
         });
       </script>
