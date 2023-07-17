@@ -1,0 +1,406 @@
+div.main>div.menu{
+    width: 100%;
+    height: 40px;
+    box-shadow: 0.5px 0.5px 1px #8B8CA5;
+}
+div.main>div.menu>nav{
+    width: inherit;
+    height: inherit;
+}
+div.main>div.menu>nav>ul{
+    width: 99%;
+    height: inherit;
+    list-style: none;
+    padding: 0 20px;
+    /* position: relative; */
+}
+div.main>div.menu>nav>ul>li{
+    width: auto;
+    height: 39px;
+    display: inline-block;
+    /* margin: 2px 11px; */
+    position: relative;
+}
+div.main>div.menu>nav>ul>li:hover{
+    border-bottom: 2px solid #EE384E;
+    animation: 300ms;
+    cursor: pointer;
+}
+div.main>div.menu>nav>ul>li>a{
+    text-decoration: none;
+    font-size: 12px;
+    font-family: yekan;
+    font-weight: bold;
+    color: #8B8CA5;
+    padding: 0 10px;
+}
+div.main>div.menu>nav>ul>li>div.submenu{
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0.5px 1px 1px black;
+    width: calc(100vw - 40px);
+    height: 520px;
+    position: absolute;
+    top: 40px;
+    border-radius: 0 0 15px 15px;
+    z-index: 3;
+    display: none;
+}
+div.main>div.menu>nav>ul>li:hover>div.submenu{
+display: block;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu{
+    width: 12.5%;
+    height: inherit;
+    border-left: 1px solid lightgray;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul{
+    width: auto;
+    height: inherit;
+    list-style: none;
+    /* position: absolute; */
+    /* width: 230px;
+    height: 550px; */
+    /* top: 42px; */
+    /* display: none; */
+    /* list-style: none; */
+    transition: 400ms;
+    
+    background-color: rgb(250, 250, 250);
+    /* overflow-y:scroll; */
+    direction: ltr;
+    cursor: pointer;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li{
+    width: inherit;
+    height: 40px;
+    margin-bottom: 5px;
+    transition: 300ms;
+    
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>a{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 50px;
+    width: inherit;
+    height: inherit;
+    display: block;
+    color: #515272;
+    transition: 400ms;
+    padding: 0 10px;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li:hover{
+    background-color: rgb(241, 241, 241);
+}
+
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li:hover>a{
+    color: #EE384E;
+}
+li:hover .hover-color,
+li:hover .hover-color + svg use {
+    fill: #EE384E;
+}
+li:not(:hover) .hover-color,
+li:not(:hover) .hover-color + svg use {
+    fill: #515272; 
+}
+
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu{
+    width: 88%;
+    height: 550px;
+    position: absolute;
+    left: -25px;
+    top: 0;
+    display: none;
+    border-radius: 0 0 0 15px;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu2{
+    width: 88%;
+    height: 550px;
+    position: absolute;
+    left: -25px;
+    top: 0;
+    display: none;
+    border-radius: 0 0 0 15px;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu3{
+    width: 88%;
+    height: 550px;
+    position: absolute;
+    left: -25px;
+    top: 0;
+    display: none;
+    border-radius: 0 0 0 15px;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu4{
+    width: 88%;
+    height: 550px;
+    position: absolute;
+    left: -25px;
+    top: 0;
+    display: none;
+    border-radius: 0 0 0 15px;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li:hover>div.leftmenu{
+display: block;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li:hover>div.leftmenu2{
+    display: block;
+    }
+    div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li:hover>div.leftmenu3{
+        display: block;
+        }
+        div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li:hover>div.leftmenu4{
+            display: block;
+            }
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu>div.first, div.second, div.third, div.fourth{
+    display: inline-block;
+    margin-left: 100px;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu2>div.first, div.second, div.thirdd, div.fourth , div.fifth{
+    display: inline-block;
+    margin-left: 90px;
+    position: relative;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu3>div.first, div.second, div.third, div.fourth{
+    display: inline-block;
+    margin-left: 100px;
+    position: relative;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu4>div.first, div.second, div.third, div.fourth{
+    display: inline-block;
+    margin-left: 100px;
+    position: relative;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu>div.fourth{
+    position: relative;
+    top: -280px;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu2>div.fourth{
+    position: relative;
+    top: 0;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu2>div.fourth{
+    position: absolute;
+    top: 70px;
+    left: 290px;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu2>div.thirdd{
+    position: absolute;
+    top: 70px;
+    right: 480px;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu2>div.fifth{
+    position: absolute;
+    top: 70px;
+    left: 70px;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu2>div.fourth{
+    position: absolute;
+    top: 70px;
+    left: 290px;
+}
+/* div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu3>div.second{
+    position: absolute;
+    top: 70px;
+    right: 480px;
+} */
+/* div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu3>div.thirdd{
+    position: absolute;
+    top: 70px;
+    right: 480px;
+} */
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu3>div.fourth{
+    position: absolute;
+    top: 70px;
+    left: 435px;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu4>div.fourth{
+    position: absolute;
+    top: 70px;
+    left: 175px;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu> div.first>a{
+    text-decoration: none;
+    color: rgb(32, 30, 30);
+    font-family: yekan;
+    font-weight: bold;
+    font-size: 12px;
+    display: inline-block;
+    margin: 20px 0 30px 0;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu2> div.first>a{
+    text-decoration: none;
+    color: rgb(32, 30, 30);
+    font-family: yekan;
+    font-weight: bold;
+    font-size: 12px;
+    display: inline-block;
+    margin: 20px 0 30px 0;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu3> div.first>a{
+    text-decoration: none;
+    color: rgb(32, 30, 30);
+    font-family: yekan;
+    font-weight: bold;
+    font-size: 12px;
+    display: inline-block;
+    margin: 20px 0 30px 0;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu4> div.first>a{
+    text-decoration: none;
+    color: rgb(32, 30, 30);
+    font-family: yekan;
+    font-weight: bold;
+    font-size: 12px;
+    display: inline-block;
+    margin: 20px 0 30px 0;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu>div.first>ul, div.second>ul, div.third>ul, div.fourth>ul {
+    list-style: none;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu2>div.first>ul, div.second>ul, div.thirdd>ul, div.fourth>ul , div.fifth>ul{
+    list-style: none;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu3>div.first>ul, div.second>ul, div.thirdd>ul, div.fourth>ul {
+    list-style: none;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu4>div.first>ul, div.second>ul, div.thirdd>ul, div.fourth>ul {
+    list-style: none;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu>div.first>ul>li>a, div.second>ul>li>a, div.third>ul>li>a , div.fourth>ul>li>a{
+    text-decoration: none;
+    color: rgb(32, 30, 30);
+    font-family: yekan;
+    font-weight: bold;
+    font-size: 13px;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu2>div.first>ul>li>a, div.second>ul>li>a, div.thirdd>ul>li>a , div.fourth>ul>li>a , div.fifth>ul>li>a{
+    text-decoration: none;
+    color: rgb(32, 30, 30);
+    font-family: yekan;
+    font-weight: bold;
+    font-size: 13px;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu3>div.first>ul>li>a, div.second>ul>li>a, div.third>ul>li>a , div.fourth>ul>li>a{
+    text-decoration: none;
+    color: rgb(32, 30, 30);
+    font-family: yekan;
+    font-weight: bold;
+    font-size: 13px;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu4>div.first>ul>li>a, div.second>ul>li>a, div.third>ul>li>a , div.fourth>ul>li>a{
+    text-decoration: none;
+    color: rgb(32, 30, 30);
+    font-family: yekan;
+    font-weight: bold;
+    font-size: 13px;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu>div.first>ul>li>a>span, div.second>ul>li>a>span, div.third>ul>li>a>span, div.fourth>ul>li>a>span {
+    color: #8B8CA5;
+    font-family: yekan;
+    font-weight: bold;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu2>div.first>ul>li>a>span, div.second>ul>li>a>span, div.thirdd>ul>li>a>span, div.fourth>ul>li>a>span , div.fifth>ul>li>a>span{
+    color: #8B8CA5;
+    font-family: yekan;
+    font-weight: bold;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu3>div.first>ul>li>a>span, div.second>ul>li>a>span, div.third>ul>li>a>span, div.fourth>ul>li>a>span {
+    color: #8B8CA5;
+    font-family: yekan;
+    font-weight: bold;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu4>div.first>ul>li>a>span, div.second>ul>li>a>span, div.third>ul>li>a>span, div.fourth>ul>li>a>span {
+    color: #8B8CA5;
+    font-family: yekan;
+    font-weight: bold;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu>div.first>ul>li>a>.reed, div.second>ul>li>a>.reed, div.third>ul>li>a>.reed{
+    color: #ee384e;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu>div.first>ul>li>a>.reeed, div.second>ul>li>a>.reeed, div.third>ul>li>a>.reeed {
+    color: #ee384e;
+    margin-left: 5px;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu2>div.first>ul>li>a>.reeed, div.second>ul>li>a>.reeed, div.fourth>ul>li>a>.reeed ,div.thirdd>ul>li>a>.reeed , div.fifth>ul>li>a>.reeed{
+    color: #ee384e;
+    margin-left: 5px;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu3>div.first>ul>li>a>.reeed, div.second>ul>li>a>.reeed, div.third>ul>li>a>.reeed {
+    color: #ee384e;
+    margin-left: 5px;
+}
+div.main>div.menu>nav>ul>li>div.submenu>div.rightmenu>ul>li>div.leftmenu4>div.first>ul>li>a>.reeed, div.second>ul>li>a>.reeed, div.third>ul>li>a>.reeed {
+    color: #ee384e;
+    margin-left: 5px;
+}
+div.main>div.menu>nav>ul>li.leftside{
+    position: relative;
+    left: -377px;
+    text-decoration: none;
+}
+div.main>div.menu>nav>ul>li.leftside:hover{
+    border-bottom:none;
+}
+div.main>div.menu>nav>ul>li.leftside>span{
+    font-size: 12.5px;
+    font-weight: bold;
+    font-family: yekan;
+}
+/* div.main>div.menu>nav>ul>li>ul{
+    position: absolute;
+    width: 230px;
+    height: 550px;
+    top: 42px;
+    display: none;
+    list-style: none;
+    transition: 400ms;
+    z-index: 2;
+    background-color: rgb(226, 168, 168);
+    overflow-y:scroll;
+    direction: ltr;
+    cursor: pointer;
+}
+div.main>div.menu>nav>ul>li>ul>li{
+    width: auto;
+    height: 50px;
+    position: relative;
+}
+div.main>div.menu>nav>ul>li>ul>li>a{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 50px;
+    color: #515272;
+    transition: 400ms;
+    margin-right: 8px;
+}
+div.main>div.menu>nav>ul>li:hover{
+    border-bottom: 2px solid #EE384E;
+    animation: 300ms;
+}
+div.main>div.menu>nav>ul>li:hover>ul{
+    display: block;
+}
+div.main>div.menu>nav>ul>li>ul>li:hover{
+    background-color: rgb(241, 241, 241);
+}
+div.main>div.menu>nav>ul>li>ul>li:hover>a{
+    color: #EE384E;
+}
+li:hover .hover-color,
+li:hover .hover-color + svg use {
+    fill: #EE384E;
+}
+li:not(:hover) .hover-color,
+li:not(:hover) .hover-color + svg use {
+    fill: #515272; 
+}
+div.main>div.menu>nav>ul>li>ul>li>ul{
+    position: absolute;
+    width: 100%;
+    left: 100%;
+    list-style: none;
+
+} */

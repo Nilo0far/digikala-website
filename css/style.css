@@ -1,8 +1,19 @@
+@import url(../css/menu.css);
+@font-face {
+    font-family: yekan;
+    src: url(../fonts/Qs_Iranyekan\ light.ttf);
+}
+@font-face {
+    font-family: yekanB;
+    src: url(../fonts/Qs_Iranyekan\ extrabold.ttf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: yekan;
 }
+
 div.main>div.suggest{
     /* background-color: #bbb; */
     height: 150px;
@@ -24,6 +35,9 @@ div.main>div.suggest>div.pic>img{
 }
 div.main>div.suggest>div.pic>span{
     display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: yekan;
 }
 
 
@@ -41,9 +55,11 @@ div.main>div.suggest>div.pic>span{
     height: 400px;
     width: 100%;
     object-fit: cover;
+    
   }
 div.main>div.shop>div.shpic,div.shpic2{
     display: inline-block;  
+    
 }
 
 div.main>div.shop{
@@ -70,8 +86,125 @@ div.main>div.shop>div.shpic2>img{
 }
 div.main>div.shop>div.shpic>span, div.shpic2>span{
     display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
 }
-div.main>div.amazing{
+div.main>div.slider{
+    height: 300px;
+    width: 100%;
+}
+div.main>div.slider>div.amazing{
+    height: 300px;
+    width: 1305px;
+    border-radius: 25px;
+    background-color: #ef394e;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+div.main>div.slider>div.amazing>div.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide:first-child{
+    background-color: #ef394e;
+    position: relative;
+  }
+  .swiper-slide:nth-child(2){
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .swiper-slide:last-child{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  div.main>div.slider>div.amazing>div.swiper>div.swiper-wrapper>div.swiper-slide>strong{
+    color: white;
+    font-size: 19px;
+    display: inline-block;
+    position: absolute;
+    top: 17px;
+    left: 85px;
+  }
+  div.main>div.slider>div.amazing>div.swiper>div.swiper-wrapper>div.swiper-slide>img{
+    display: block;
+    height: 112px;
+    width: 112px;
+    position: absolute;
+    top: 110px;
+    left: 60px;
+  }
+  div.main>div.slider>div.amazing>div.swiper>div.swiper-wrapper>div.swiper-slide>.spann{
+    color: white;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: 237px;
+    left: 70px;
+  }
+
+  div.main>div.slider>div.amazing>div.swiper>div.swiper-wrapper>div.swiper-slide>div.white>img{
+    width: 150px;
+    height: 150px;
+    display: block;
+    object-fit: cover;
+    margin-top: -85px;
+  }
+  
+  div.main>div.slider>div.amazing>div.swiper>div.swiper-wrapper>div.swiper-slide>div.white>span{
+    font-weight: bold;
+    position: absolute;
+    right: 90px;
+    top:175px;
+    font-size: 16px;
+  }
+  div.main>div.slider>div.amazing>div.swiper>div.swiper-wrapper>div.swiper-slide>div.white>.red{
+    background-color: #EF394E;
+    width: 34px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 17px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top:175px;
+  }
+  div.main>div.slider>div.amazing>div.swiper>div.swiper-wrapper>div.swiper-slide>div.white>.cross{
+    font-weight: bold;
+    position: absolute;
+    right: 100px;
+    top:215px;
+    font-size: 12px;
+    color: #D6D6DE;
+    text-decoration: line-through;
+  }
+  div.main>div.slider>div.amazing>div.swiper>div.swiper-wrapper>div.swiper-slide>div.white>.toman{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 258px;
+    left: 15px;
+  }
+/* div.main>div.amazing{
     background-color: #ef394e;
     height: 300px;
     width: 1305px;
@@ -79,27 +212,31 @@ div.main>div.amazing{
     margin-right: 112px;
     position: relative;
 }
-div.main>div.amazing>strong{
+div.main>div.amazing>div.swiper,div.swiper-wrapper{
+    width: 100%;
+      height: 100%;
+}
+div.main>div.amazing>div.swiper>div.swiper-wrapper>strong{
     color: white;
     font-size: 25px;
     margin-top: 40px;
     margin-right: 60px;
     display: inline-block;
 }
-div.main>div.amazing>img{
+div.main>div.amazing>div.swiper>div.swiper-wrapper>img{
     display: block;
     height: 112px;
     width: 112px;
     margin-right: 36px;
 }
-div.main>div.amazing>.spann{
+div.main>div.amazing>div.swiper>div.swiper-wrapper>.spann{
     color: white;
     display: inline-block;
     margin-right: 55px;
     font-size: 17px;
     font-weight: bold;
 }
-div.main>div.amazing>div.amazing-left>div.white{
+div.main>div.amazing>div.swiper>div.swiper-wrapper>div.amazing-left>div.white{
     background-color: white;
     width: 182px;
     height: 260px;
@@ -109,15 +246,19 @@ div.main>div.amazing>div.amazing-left>div.white{
     text-align: center;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
 }
 
-div.main>div.amazing>div.amazing-left>div.white>img,div.white1>img, div.white2>img, div.white3>img, div.white4>img, div.white5>img{
+
+div.main>div.amazing>div.swiper>div.swiper-wrapper>div.amazing-left>div.white>img,div.white1>img, div.white2>img, div.white3>img, div.white4>img, div.white5>img{
     width: 150px;
     height: 150px;
-    display: inline-block;
+    display: block;
+    object-fit: cover;
     margin-top: 15px;
 }
-div.main>div.amazing>div.amazing-left>div.white1{
+div.main>div.amazing>div.swiper>div.swiper-wrapper>div.amazing-left>div.white1{
     background-color: white;
     width: 182px;
     height: 260px;
@@ -125,8 +266,10 @@ div.main>div.amazing>div.amazing-left>div.white1{
     right: 29.1%;
     top: 5%;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
-div.main>div.amazing>div.amazing-left>div.white2{
+div.main>div.amazing>div.swiper>div.swiper-wrapper>div.amazing-left>div.white2{
     background-color: white;
     width: 182px;
     height: 260px;
@@ -134,8 +277,10 @@ div.main>div.amazing>div.amazing-left>div.white2{
     right: 43.2%;
     top: 5%;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
-div.main>div.amazing>div.amazing-left>div.white3{
+div.main>div.amazing>div.swiper>div.swiper-wrapper>div.amazing-left>div.white3{
     background-color: white;
     width: 182px;
     height: 260px;
@@ -143,8 +288,10 @@ div.main>div.amazing>div.amazing-left>div.white3{
     right: 57.3%;
     top: 5%;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
-div.main>div.amazing>div.amazing-left>div.white4{
+div.main>div.amazing>div.swiper>div.swiper-wrapper>div.amazing-left>div.white4{
     background-color: white;
     width: 182px;
     height: 260px;
@@ -152,8 +299,10 @@ div.main>div.amazing>div.amazing-left>div.white4{
     right: 71.4%;
     top: 5%;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
-div.main>div.amazing>div.amazing-left>div.white5{
+div.main>div.amazing>div.swiper>div.swiper-wrapper>div.amazing-left>div.white5{
     background-color: white;
     width: 182px;
     height: 260px;
@@ -161,26 +310,28 @@ div.main>div.amazing>div.amazing-left>div.white5{
     right: 85.5%;
     top: 5%;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
-div.main>div.amazing>div.amazing-left>div.white>span,div.white1>span, div.white2>span, div.white3>span, div.white4>span, div.white5>span{
+div.main>div.amazing>div.swiper>div.swiper-wrapper>div.amazing-left>div.white>span,div.white1>span, div.white2>span, div.white3>span, div.white4>span, div.white5>span{
     font-weight: bold;
     position: absolute;
     right: 75px;
     top:175px;
 }
-div.main>div.amazing>div.amazing-left>div.white1>.prc, div.white2>.prc{
+div.main>div.amazing>div.swiper>div.swiper-wrapper>div.amazing-left>div.white1>.prc, div.white2>.prc{
     font-weight: bold;
     position: absolute;
     right:99px;
     top:175px;
 }
-div.main>div.amazing>div.amazing-left>div.white4>.prcc{
+div.main>div.amazing>div.swiper>div.swiper-wrapper>div.amazing-left>div.white4>.prcc{
     font-weight: bold;
     position: absolute;
     right:88px;
     top:175px;
 }
-div.main>div.amazing>div.amazing-left>div.white>.red,div.white1>.red, div.white2>.red, div.white3>.red, div.white4>.red, div.white5>.red{
+div.main>div.amazing>div.swiper>div.swiper-wrapper>div.amazing-left>div.white>.red,div.white1>.red, div.white2>.red, div.white3>.red, div.white4>.red, div.white5>.red{
     background-color: #EF394E;
     width: 34px;
     height: 20px;
@@ -192,7 +343,7 @@ div.main>div.amazing>div.amazing-left>div.white>.red,div.white1>.red, div.white2
     right: 10px;
     top:175px;
 }
-div.main>div.amazing>div.amazing-left>div.white>.cross,div.white1>.cross, div.white2>.cross, div.white3>.cross, div.white4>.cross, div.white5>.cross{
+div.main>div.amazing>div.swiper>div.swiper-wrapper>div.amazing-left>div.white>.cross,div.white1>.cross, div.white2>.cross, div.white3>.cross, div.white4>.cross, div.white5>.cross{
     font-weight: bold;
     position: absolute;
     right: 75px;
@@ -200,7 +351,7 @@ div.main>div.amazing>div.amazing-left>div.white>.cross,div.white1>.cross, div.wh
     color: #D6D6DE;
     text-decoration: line-through;
 }
-div.main>div.amazing>div.amazing-left>div.white1>.crosss, div.white2>.crosss{
+div.main>div.amazing>div.swiper>div.swiper-wrapper>div.amazing-left>div.white1>.crosss, div.white2>.crosss{
     font-weight: bold;
     position: absolute;
     right: 98px;
@@ -208,13 +359,13 @@ div.main>div.amazing>div.amazing-left>div.white1>.crosss, div.white2>.crosss{
     color: #D6D6DE;
     text-decoration: line-through;
 }
-div.main>div.amazing>div.amazing-left>div.white>img.toman,div.white1>img.toman, div.white2>img.toman, div.white3>img.toman, div.white4>img.toman, div.white5>img.toman{
+div.main>div.amazing>div.swiper>div.swiper-wrapper>div.amazing-left>div.white>img.toman,div.white1>img.toman, div.white2>img.toman, div.white3>img.toman, div.white4>img.toman, div.white5>img.toman{
     width: 25px;
     height: 25px;
     position: absolute;
     top: 155px;
     left: 8px;
-}
+} */
 div.main>div.supermarket{
     background-color:#EDF1EF;
     height: 110px;
@@ -242,6 +393,7 @@ div.main>div.supermarket>div.supermarket-right>p{
     width: 109.51px;
     height: 29px;
     background-color: #39AE00;
+    font-size: 14px;
     font-weight: bold;
     color: white;
     padding: 5px 12px;
@@ -274,6 +426,8 @@ div.main>div.supermarket>div.supermarket-left>div.supermarket-left1>div.per1>spa
     display: inline-block;
     border-radius: 17px;
     color: white;
+    font-size: 12px;
+    font-weight: bold;
     text-align: center;
     position: absolute;
     left: 150px;
@@ -312,6 +466,7 @@ div.main>div.supermarket>div.supermarket-left>div.supermarket-left2>span{
     position: absolute;
     left: 64px;
     top: 36px;
+    font-size: 12px;
     background-color: white;
     font-weight: bold;
     padding: 15px 20px;
@@ -331,6 +486,7 @@ div.main>div.image>img{
 }
 div.main>div.texth3{
     margin: 50px;
+    font-size: 17px;
     text-align: center;
 }
 div.main>div.rowpic{
@@ -351,6 +507,7 @@ div.main>div.rowpic>div.rowpic1>div.rpic>span, div.rowpic2>div.rpic>span{
     margin-top: 22px;
     margin-bottom: 50px;
     font-weight: bold;
+    font-size: 12px;
 }
 div.main>div.imgbanner{
     text-align: center;
@@ -366,7 +523,7 @@ div.main>div.rowpic7{
 }
 div.main>div.rowpic7>div.rowpicc1{
     width: 90%;
-    height: 150px;
+    height: 156px;
     border: 1px solid #E4E4E9;
     border-radius: 15px 15px 0 0;
     margin: auto;
@@ -374,7 +531,7 @@ div.main>div.rowpic7>div.rowpicc1{
 }
 div.main>div.rowpic7>div.rowpicc2{
     width: 90%;
-    height: 150px;
+    height: 156px;
     border: 1px solid #E4E4E9;
     border-radius:  0 0 15px 15px;
     margin: auto;
@@ -411,6 +568,8 @@ div.imgbg>img{
 div.main>div.rowpic7>div.rowpicc1>div.rpicc>span, div.rowpicc2>div.rpicc>span{
     display: inline-block;
     margin: auto;
+    font-size: 12px;
+    font-weight: bold;
     
 }
 div.main>div.brands{
@@ -427,7 +586,7 @@ div.main>div.brands>div.texth3{
     margin: 40px 0;
 }
 div.main>div.brands>div.picbrand{
-    width: 148px;
+    width: 147px;
     display: inline-block;
     padding: 10px;
 }
@@ -440,7 +599,7 @@ div.main>div.brands>div.picbrand>img{
 }
 div.main>div.visitfull{
     width: 90%;
-    height: 430px;
+    height: 450px;
     border: 1px solid #E4E4E9;
     border-radius: 15px;
     margin: auto;
@@ -459,9 +618,11 @@ div.main>div.visitfull>div.visit:nth-of-type(4){
 }
 div.main>div.visitfull>div.visit>div.texth3{
     margin-bottom: 10px;
+    font-size: 13px;
 }
 div.main>div.visitfull>div.visit>div.para{
     margin-bottom: 25px;
+    font-size: 10px;
 }
 div.main>div.visitfull>div.visit>div.visitpic{
     padding: 20px;
@@ -490,6 +651,7 @@ div.main>div.visitfull>div.visit>div.linkk>a{
     text-decoration: none;
     color: #26CBE4;
     font-weight: bold;
+    font-size: 12px;
 }
 div.main>div.digiplus{
     width: 90%;
@@ -508,7 +670,7 @@ div.main>div.digiplus>div.digipluspic>img{
 }
 div.main>div.digiplus>div.digipluspic>.para{
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     margin: 8px 0;
 }
@@ -516,7 +678,7 @@ div.main>div.digiplus>div.digipluspic>a{
     display: inline-block;
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     border: 1px solid white;
     padding: 9px 22px;
@@ -548,13 +710,14 @@ div.main>div.digiplus>div.delivery>div.deliverytop{
 div.main>div.digiplus>div.delivery>div.deliverytop>p.para{
     display: inline-block;
     margin-right: 10px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 div.main>div.digiplus>div.delivery>div.deliverytop>a{
     text-decoration: none;
     color: #941B80;
-    font-size: 16px;
+    font-size: 12px;
+    font-weight: bold;
     display: inline-block;
     position: absolute;
     top: 10px;
@@ -631,14 +794,14 @@ div.main>div.digiclub>div.digiclubleft> div.pic3>img.logoo{
     margin-top: 24px;
 }
 div.main>div.digiclub>div.digiclubleft>div.pic1>h2, div.pic3>h2{
-    font-size: 13px;
+    font-size: 11px;
     display: inline-block;
     position: absolute;
     top: 27px;
     right: 40px;
 }
 div.main>div.digiclub>div.digiclubleft> div.pic2>h2{
-    font-size: 13px;
+    font-size: 11px;
     display: inline-block;
     position: absolute;
     top: 30px;
@@ -680,11 +843,12 @@ div.main>div.mostsell>div.selltop>img{
     top: 30px;
 }
 div.main>div.mostsell>div.selltop>h3.text3{
-    font-size: 26px;
+    font-size: 20px;
 }
 div.main>div.mostsell>div.selltop>a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 14px;
+    font-weight: bold;
     color: #1EC1D4;
     position: absolute;
     left: 20px;
@@ -753,32 +917,36 @@ div.main>div.mostsell>div.mostselltottal>div.mostsellcontect>div.mostsellright>i
 div.main>div.mostsell>div.mostselltottal>div.mostsellcontect>div.mostsellleft1>h1.sellh1{
     display: inline-block;
     position: absolute;
-    top: 11px;
+    top: 2px;
     right: -23px;
+    font-family: yekanB ;
     color: #1ec1d4;
-    font-size: 25px;
+    font-size: 26px;
 }
 div.main>div.mostsell>div.mostselltottal>div.mostsellcontect>div.mostsellleft2>h1.sellh2{
     display: inline-block;
     position: absolute;
-    top: 11px;
+    top: 2px;
     right: -23px;
+    font-family: yekanB;
     color: #1ec1d4;
-    font-size: 25px;
+    font-size: 26px;
 }
 div.main>div.mostsell>div.mostselltottal>div.mostsellcontect>div.mostsellleft3>h1.sellh3{
     display: inline-block;
     position: absolute;
-    top: 11px;
+    top: 2px;
     right: -23px;
+    font-family: yekanB ;
     color: #1ec1d4;
-    font-size: 25px;
+    font-size: 26px;
 }
+
 div.main>div.mostsell>div.mostselltottal>div.mostsellcontect>div.mostsellleft1>p{
     width: 167px;
     display: inline-block;
-    font-size: 14px;
-    font-weight: lighter;
+    font-size: 11px;
+    font-weight: bold;
     color: #8d8ea3;
     margin-top: 2px;
     line-height: 25px;
@@ -786,8 +954,8 @@ div.main>div.mostsell>div.mostselltottal>div.mostsellcontect>div.mostsellleft1>p
 div.main>div.mostsell>div.mostselltottal>div.mostsellcontect>div.mostsellleft2>p{
     width: 158px;
     display: inline-block;
-    font-size: 14px;
-    font-weight: lighter;
+    font-size: 11px;
+    font-weight: bold;
     color: #8d8ea3;
     margin-top: 2px;
     line-height: 25px;
@@ -795,8 +963,8 @@ div.main>div.mostsell>div.mostselltottal>div.mostsellcontect>div.mostsellleft2>p
 div.main>div.mostsell>div.mostselltottal>div.mostsellcontect>div.mostsellleft3>p{
     width: 183px;
     display: inline-block;
-    font-size: 14px;
-    font-weight: lighter;
+    font-size: 11px;
+    font-weight: bold;
     color: #8d8ea3;
     margin-top: 2px;
     line-height: 25px;
@@ -865,32 +1033,35 @@ div.main>div.mostsell>div.mostselltottal1>div.mostsellcontect>div.mostsellright>
 div.main>div.mostsell>div.mostselltottal1>div.mostsellcontect>div.mostsellleft1>h1.sellh1{
     display: inline-block;
     position: absolute;
-    top: 11px;
+    top: 2px;
     right: -23px;
+    font-family: yekanB;
     color: #1ec1d4;
-    font-size: 25px;
+    font-size: 26px;
 }
 div.main>div.mostsell>div.mostselltottal1>div.mostsellcontect>div.mostsellleft2>h1.sellh2{
     display: inline-block;
     position: absolute;
-    top: 11px;
+    top: 3px;
     right: -23px;
+    font-family: yekanB;
     color: #1ec1d4;
-    font-size: 25px;
+    font-size: 26px;
 }
 div.main>div.mostsell>div.mostselltottal1>div.mostsellcontect>div.mostsellleft3>h1.sellh3{
     display: inline-block;
     position: absolute;
-    top: 11px;
+    top: -2px;
     right: -23px;
+    font-family: yekanB;
     color: #1ec1d4;
-    font-size: 25px;
+    font-size: 26px;
 }
 div.main>div.mostsell>div.mostselltottal1>div.mostsellcontect>div.mostsellleft1>p{
     width: 178px;
     display: inline-block;
-    font-size: 14px;
-    font-weight: lighter;
+    font-size: 11px;
+    font-weight: bold;
     color: #8d8ea3;
     margin-top: 2px;
     line-height: 25px;
@@ -898,8 +1069,8 @@ div.main>div.mostsell>div.mostselltottal1>div.mostsellcontect>div.mostsellleft1>
 div.main>div.mostsell>div.mostselltottal1>div.mostsellcontect>div.mostsellleft2>p{
     width: 158px;
     display: inline-block;
-    font-size: 14px;
-    font-weight: lighter;
+    font-size: 11px;
+    font-weight: bold;
     color: #8d8ea3;
     margin-top: 2px;
     line-height: 25px;
@@ -907,8 +1078,8 @@ div.main>div.mostsell>div.mostselltottal1>div.mostsellcontect>div.mostsellleft2>
 div.main>div.mostsell>div.mostselltottal1>div.mostsellcontect>div.mostsellleft3>p{
     width: 183px;
     display: inline-block;
-    font-size: 14px;
-    font-weight: lighter;
+    font-size: 11px;
+    font-weight: bold;
     color: #8d8ea3;
     margin-top: 8px;
     line-height: 25px;
@@ -977,32 +1148,35 @@ div.main>div.mostsell>div.mostselltottal2>div.mostsellcontect>div.mostsellright>
 div.main>div.mostsell>div.mostselltottal2>div.mostsellcontect>div.mostsellleft1>h1.sellh1{
     display: inline-block;
     position: absolute;
-    top: 11px;
+    top: 2px;
     right: -23px;
+    font-family: yekanB;
     color: #1ec1d4;
-    font-size: 25px;
+    font-size: 26px;
 }
 div.main>div.mostsell>div.mostselltottal2>div.mostsellcontect>div.mostsellleft2>h1.sellh2{
     display: inline-block;
     position: absolute;
-    top: 11px;
+    top: 2px;
     right: -23px;
+    font-family: yekanB;
     color: #1ec1d4;
-    font-size: 25px;
+    font-size: 26px;
 }
 div.main>div.mostsell>div.mostselltottal2>div.mostsellcontect>div.mostsellleft3>h1.sellh3{
     display: inline-block;
     position: absolute;
-    top: 11px;
+    top: 1px;
     right: -23px;
+    font-family: yekanB;
     color: #1ec1d4;
-    font-size: 25px;
+    font-size: 26px;
 }
 div.main>div.mostsell>div.mostselltottal2>div.mostsellcontect>div.mostsellleft1>p{
     width: 167px;
     display: inline-block;
-    font-size: 14px;
-    font-weight: lighter;
+    font-size: 11px;
+    font-weight: bold;
     color: #8d8ea3;
     margin-top: 2px;
     line-height: 25px;
@@ -1010,8 +1184,8 @@ div.main>div.mostsell>div.mostselltottal2>div.mostsellcontect>div.mostsellleft1>
 div.main>div.mostsell>div.mostselltottal2>div.mostsellcontect>div.mostsellleft2>p{
     width: 178px;
     display: inline-block;
-    font-size: 14px;
-    font-weight: lighter;
+    font-size: 11px;
+    font-weight: bold;
     color: #8d8ea3;
     margin-top: 2px;
     line-height: 25px;
@@ -1019,8 +1193,8 @@ div.main>div.mostsell>div.mostselltottal2>div.mostsellcontect>div.mostsellleft2>
 div.main>div.mostsell>div.mostselltottal2>div.mostsellcontect>div.mostsellleft3>p{
     width: 183px;
     display: inline-block;
-    font-size: 14px;
-    font-weight: lighter;
+    font-size: 11px;
+    font-weight: bold;
     color: #8d8ea3;
     margin-top: 8px;
     line-height: 25px;
@@ -1089,32 +1263,35 @@ div.main>div.mostsell>div.mostselltottal3>div.mostsellcontect>div.mostsellright>
 div.main>div.mostsell>div.mostselltottal3>div.mostsellcontect>div.mostsellleft1>h1.sellh1{
     display: inline-block;
     position: absolute;
-    top: 11px;
+    top: 2px;
     right: -35px;
+    font-family: yekanB;
     color: #1ec1d4;
-    font-size: 25px;
+    font-size: 26px;
 }
 div.main>div.mostsell>div.mostselltottal3>div.mostsellcontect>div.mostsellleft2>h1.sellh2{
     display: inline-block;
     position: absolute;
-    top: 11px;
+    top: 2px;
     right: -35px;
+    font-family: yekanB;
     color: #1ec1d4;
-    font-size: 25px;
+    font-size: 26px;
 }
 div.main>div.mostsell>div.mostselltottal3>div.mostsellcontect>div.mostsellleft3>h1.sellh3{
     display: inline-block;
     position: absolute;
-    top: 11px;
+    top: 1px;
     right: -35px;
+    font-family: yekanB;
     color: #1ec1d4;
-    font-size: 25px;
+    font-size: 26px;
 }
 div.main>div.mostsell>div.mostselltottal3>div.mostsellcontect>div.mostsellleft1>p{
     width: 166px;
     display: inline-block;
-    font-size: 14px;
-    font-weight: lighter;
+    font-size: 11px;
+    font-weight: bold;
     color: #8d8ea3;
     margin-top: 2px;
     line-height: 25px;
@@ -1122,8 +1299,8 @@ div.main>div.mostsell>div.mostselltottal3>div.mostsellcontect>div.mostsellleft1>
 div.main>div.mostsell>div.mostselltottal3>div.mostsellcontect>div.mostsellleft2>p{
     width: 158px;
     display: inline-block;
-    font-size: 14px;
-    font-weight: lighter;
+    font-size: 11px;
+    font-weight: bold;
     color: #8d8ea3;
     margin-top: 10px;
     line-height: 25px;
@@ -1131,8 +1308,8 @@ div.main>div.mostsell>div.mostselltottal3>div.mostsellcontect>div.mostsellleft2>
 div.main>div.mostsell>div.mostselltottal3>div.mostsellcontect>div.mostsellleft3>p{
     width: 183px;
     display: inline-block;
-    font-size: 14px;
-    font-weight: lighter;
+    font-size: 11px;
+    font-weight: bold;
     color: #8d8ea3;
     margin-top: 8px;
     line-height: 25px;
@@ -1149,15 +1326,15 @@ div.main>div.readypic>img{
 }
 div.main>div.discount{
     width: 90%;
-    height: 833px;
+    height: 848px;
     border: 1px solid #E4E4E9;
     border-radius: 20px;
     text-align: center;
     margin: auto;
 }
 div.main>div.discount>div.discounttop>h3.text3{
-    font-size: 26px;
-    font-weight: lighter;
+    font-size: 20px;
+    font-weight: bold;
     margin-top: 25px;
     margin-bottom: 20px;
     display: inline-block;
@@ -1217,6 +1394,7 @@ div.main>div.discount>div.discountbottom>div.dicountcell>.red,div.dicountcell1>.
     background-color: #EF394E;
     width: 34px;
     height: 20px;
+    font-size: 12px;
     display: inline-block;
     border-radius: 17px;
     color: white;
@@ -1229,6 +1407,7 @@ div.main>div.discount>div.discountbottom>div.dicountcell>.red{
     background-color: #EF394E;
     width: 34px;
     height: 20px;
+    font-size: 12px;
     display: inline-block;
     border-radius: 17px;
     color: white;
@@ -1241,30 +1420,35 @@ div.main>div.discount>div.discountbottom>div.dicountcell>span, div.dicountcell1>
     position: absolute;
     top: 174px;
     left: 33px;
+    font-size: 14px;
+    font-weight: bold;
 }
 div.main>div.discount>div.discountbottom>div.dicountcell5>span{
     position: absolute;
     top: 174px;
     left: 0px;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 div.main>div.discount>div.discountbottom>div.dicountcell>img.toman,div.dicountcell1>img.toman, div.dicountcell2>img.toman, div.dicountcell3>img.toman, div.dicountcell4>img.toman{
     width: 25px;
     height: 25px;
     position: absolute;
-    top: 167px;
+    top: 170px;
     left: 8px;
 }
 div.main>div.discount>div.discountbottom>div.dicountcell5>img.toman{
     width: 25px;
     height: 25px;
     position: absolute;
-    top: 167px;
-    left: -25px;
+    top: 170px;
+    left: -27px;
 }
 div.main>div.discount>div.discountbottom>div.dicountcell>span.cross,div.dicountcell1>span.cross, div.dicountcell2>span.cross, div.dicountcell3>span.cross, div.dicountcell4>span.cross{
     font-weight: bold;
     position: absolute;
+    font-size: 12px;
     left: 32px;
     top:202px;
     color: #D6D6DE;
@@ -1273,6 +1457,7 @@ div.main>div.discount>div.discountbottom>div.dicountcell>span.cross,div.dicountc
 div.main>div.discount>div.discountbottom>div.dicountcell5>span.cross{
     font-weight: bold;
     position: absolute;
+    font-size: 12px;
     left: 1px;
     top:202px;
     color: #D6D6DE;
@@ -1298,11 +1483,13 @@ div.main>div.info>div.infotop{
 div.main>div.info>div.infotop>h3.text3{
     text-align: right;
     margin-right: 50px;
+    font-size: 16px;
     position: absolute;
 }
 div.main>div.info>div.infotop>a{
     font-weight: bold;
     text-decoration: none;
+    font-size: 12px;
     color:#1ec1d4;
 }
 div.main>div.info>div.infobottom>div.part{
@@ -1321,7 +1508,7 @@ div.main>div.info>div.infobottom>div.part>img{
     border-radius: 15px 15px 0 0; 
 }
 div.main>div.info>div.infobottom>div.part>p{
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
     margin-top: 20px;
     margin-right: 20px;
